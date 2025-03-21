@@ -12,7 +12,4 @@ class Staff(Person):
 
 
     def role_duties(self):
-        return ("\n"
-                "- Conducting daily duties\n"
-                "- Manage school operations\n"
-                )
+        return f"Staff Duties: \n-Conducting {self.role} related daily duties\n"

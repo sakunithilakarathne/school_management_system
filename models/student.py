@@ -52,8 +52,4 @@ class Student(Person):
         return average_grade
 
     def role_duties(self):
-        return ("\n"
-                "- Maintaining attendance over 80%\n"
-                "- Submitting all assignments on time\n"
-                "- Sitting for all exams"
-                )
+        return f"Student Responsibilities: \n- Maintaining attendance over 80% \n- Sitting for exams of grade {self.year}\n"

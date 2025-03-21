@@ -53,9 +53,9 @@ if __name__ == "__main__":
     staff_2 = Staff("Mark Green", 35, "23, Main Road", "Male", "A_002", "HR associate")
     teacher_2 = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002", "Science")
 
-    print(f"Teacher Duties: {teacher_2.role_duties()}")
+    print(f"{teacher_2.role_duties()}")
 
-    print(f"Staff Duties: {staff_2.role_duties()}")
+    print(f"{staff_2.role_duties()}")
 
 
 
