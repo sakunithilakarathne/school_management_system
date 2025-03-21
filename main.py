@@ -50,12 +50,20 @@ if __name__ == "__main__":
     # print("Teacher SSN:", teacher_2.get_ssn())
 
 
-    staff_2 = Staff("Mark Green", 35, "23, Main Road", "Male", "A_002", "HR associate")
-    teacher_2 = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002", "Science")
+    # staff_2 = Staff("Mark Green", 35, "23, Main Road", "Male", "A_002", "HR associate")
+    # teacher_2 = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002", "Science")
+    #
+    # print(f"{teacher_2.role_duties()}")
+    #
+    # print(f"{staff_2.role_duties()}")
 
-    print(f"{teacher_2.role_duties()}")
+    # Create a Teacher instance
+    teacher = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002","Science")
 
-    print(f"{staff_2.role_duties()}")
+    # Schedule classes
+    teacher.schedule_classes("Monday", "10:00 AM", "Mathematics 101")
+    teacher.schedule_classes("Monday", "2:00 PM", "Advanced Calculus")
+    teacher.schedule_classes("Wednesday", "9:00 AM", "Linear Algebra")
 
-
-
+    # Display class schedule
+    print(teacher.display_schedule())
