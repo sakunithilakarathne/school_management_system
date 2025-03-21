@@ -58,12 +58,25 @@ if __name__ == "__main__":
     # print(f"{staff_2.role_duties()}")
 
     # Create a Teacher instance
-    teacher = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002","Science")
+    # teacher = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002","Science")
+    #
+    # # Schedule classes
+    # teacher.schedule_classes("Monday", "10:00 AM", "Mathematics 101")
+    # teacher.schedule_classes("Monday", "2:00 PM", "Advanced Calculus")
+    # teacher.schedule_classes("Wednesday", "9:00 AM", "Linear Algebra")
+    #
+    # # Display class schedule
+    # print(teacher.display_schedule())
+    student = Student("Ann Davis", 20, "No 1, Lotus Lane", "Female", "S_002", "2")
+    # Mark attendance
+    student.attendance("2025-01-01", "Mathematics", 0)
+    student.attendance("2025-01-01", "Science", 1)
+    student.attendance("2025-01-01", "Language", 1)
+    student.attendance("2025-01-02", "History", 0)
+    student.attendance("2025-01-02", "Mathematics", 1)
+    student.attendance("2025-01-03", "Science", 1)
+    student.attendance("2025-01-03", "Mathematics", 1)
+    student.attendance("2025-01-03", "Language", 1)
 
-    # Schedule classes
-    teacher.schedule_classes("Monday", "10:00 AM", "Mathematics 101")
-    teacher.schedule_classes("Monday", "2:00 PM", "Advanced Calculus")
-    teacher.schedule_classes("Wednesday", "9:00 AM", "Linear Algebra")
-
-    # Display class schedule
-    print(teacher.display_schedule())
+    # Display attendance record
+    print(student.display_attendance())
