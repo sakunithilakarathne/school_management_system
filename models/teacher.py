@@ -9,3 +9,10 @@ class Teacher(Person):
 
     def display_info(self):
         return super().display_info() + f", Teacher ID: {self.teacher_id}, Subject: {self.subject}"
+
+
+    def role_duties(self):
+        return ("\n"
+                "- Grading all exams and assignments on time\n"
+                "- Conducting in-class lectures\n"
+                )

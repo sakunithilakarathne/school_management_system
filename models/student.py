@@ -1,5 +1,3 @@
-from dask.array import average
-
 from models.person import *
 
 # Subclass: Student
@@ -52,3 +50,10 @@ class Student(Person):
         no_of_subjects = len(self.results)
         average_grade = total_grades / no_of_subjects
         return average_grade
+
+    def role_duties(self):
+        return ("\n"
+                "- Maintaining attendance over 80%\n"
+                "- Submitting all assignments on time\n"
+                "- Sitting for all exams"
+                )

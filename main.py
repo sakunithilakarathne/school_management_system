@@ -19,26 +19,43 @@ if __name__ == "__main__":
     # print(staff.display_info())
 
 
-    # Assign grades for subjects
-    subject_grades = {
-        "Mathematics": 85,
-        "Science": 90,
-        "History": 78,
-        "English": 88
-    }
-    student_1.assign_grades(subject_grades)
+    # # Assign grades for subjects
+    # subject_grades = {
+    #     "Mathematics": 85,
+    #     "Science": 90,
+    #     "History": 78,
+    #     "English": 88
+    # }
+    # student_1.assign_grades(subject_grades)
+    #
+    # # Display student information
+    # print(student_1.display_info())
 
-    # Display student information
-    print(student_1.display_info())
+    # # Display grades
+    # print("Grades:", student_1.results)
+    #
+    # # Calculate and display the average grade
+    # average_grade = student_1.calculate_average_grade()
+    # print(f"Average Grade: {average_grade:.2f}")
 
-    # Display grades
-    print("Grades:", student_1.results)
+    # Example Usage
+    # student_2 = Student("Ann Davis", 20, "No 1, Lotus Lane", "Female","S_002","2")
+    # student_2.set_ssn("987654321")
+    #
+    #
+    # teacher_2 = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002","Science")
+    # teacher_2.set_ssn("456789123")
+    #
+    # print("Student SSN:", student_2.get_ssn())
+    # print("Teacher SSN:", teacher_2.get_ssn())
 
-    # Calculate and display the average grade
-    average_grade = student_1.calculate_average_grade()
-    print(f"Average Grade: {average_grade:.2f}")
 
+    staff_2 = Staff("Mark Green", 35, "23, Main Road", "Male", "A_002", "HR associate")
+    teacher_2 = Teacher("Mary Watson", 45, "90, 2nd Lane", "Female", "T_002", "Science")
 
+    print(f"Teacher Duties: {teacher_2.role_duties()}")
+
+    print(f"Staff Duties: {staff_2.role_duties()}")
 
 
 

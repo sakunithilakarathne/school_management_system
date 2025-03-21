@@ -9,3 +9,10 @@ class Staff(Person):
 
     def display_info(self):
         return super().display_info() + f", Staff ID: {self.staff_id}, Role: {self.role}"
+
+
+    def role_duties(self):
+        return ("\n"
+                "- Conducting daily duties\n"
+                "- Manage school operations\n"
+                )
