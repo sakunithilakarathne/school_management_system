@@ -7,4 +7,4 @@ class Person:
         self.gender = gender
 
     def display_info(self):
-        return f"{self.name} {self.age} {self.address}"
+        return f"Name: {self.name}, Age: {self.age}, Address: {self.address}"

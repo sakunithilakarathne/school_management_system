@@ -7,3 +7,7 @@ class Student(Person):
         self.grade = grade
         self.student_id = student_id  # Specialized attribute: Student ID
         self.results = {}  # Dictionary to store grades for subjects
+
+
+    def display_info(self):
+        return super().display_info() + f", Student ID: {self.student_id}, Grade: {self.grade}"
