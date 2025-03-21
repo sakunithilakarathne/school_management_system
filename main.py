@@ -68,15 +68,28 @@ if __name__ == "__main__":
     # # Display class schedule
     # print(teacher.display_schedule())
     student = Student("Ann Davis", 20, "No 1, Lotus Lane", "Female", "S_002", "2")
-    # Mark attendance
-    student.attendance("2025-01-01", "Mathematics", 0)
-    student.attendance("2025-01-01", "Science", 1)
-    student.attendance("2025-01-01", "Language", 1)
-    student.attendance("2025-01-02", "History", 0)
-    student.attendance("2025-01-02", "Mathematics", 1)
-    student.attendance("2025-01-03", "Science", 1)
-    student.attendance("2025-01-03", "Mathematics", 1)
-    student.attendance("2025-01-03", "Language", 1)
+    # # Mark attendance
+    # student.attendance("2025-01-01", "Mathematics", 0)
+    # student.attendance("2025-01-01", "Science", 1)
+    # student.attendance("2025-01-01", "Language", 1)
+    # student.attendance("2025-01-02", "History", 0)
+    # student.attendance("2025-01-02", "Mathematics", 1)
+    # student.attendance("2025-01-03", "Science", 1)
+    # student.attendance("2025-01-03", "Mathematics", 1)
+    # student.attendance("2025-01-03", "Language", 1)
+    #
+    # # Display attendance record
+    # print(student.display_attendance())
 
-    # Display attendance record
-    print(student.display_attendance())
+    # Create a Staff instance
+    staff = Staff("John Doe", 30, "789, Main Street", "Male", "S_003",
+                  "Technician", 3,50000,2021)
+
+    # Calculate salary
+    staff.calculate_salary()
+
+    # Display staff information
+    print(staff.display_info())
+
+    # Get salary
+    print("Calculated Salary:", staff.get_salary())
