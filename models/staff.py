@@ -45,5 +45,5 @@ class Staff(Person):
         """
         if self.salary is None:
             raise ValueError("Salary has not been calculated yet. Call calculate_salary() first.")
-        return f"Salary: ${self.salary:.2f}"
+        return f"Salary: Rs.{self.salary:.2f}"
 

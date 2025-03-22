@@ -1,4 +1,4 @@
-
+# Base class
 class Person:
     def __init__(self,name,age,address,gender):
         self.name = name
@@ -8,6 +8,9 @@ class Person:
         self.__ssn = None   # Private Attribute
 
     def display_info(self):
+        """
+        Display information of the person.
+        """
         return f"Name: {self.name}, Age: {self.age}, Address: {self.address}"
 
         # Getter method for ssn
@@ -21,8 +24,6 @@ class Person:
     def set_ssn(self, ssn):
         """
         Sets the Social Security Number (SSN) of the person.
-        :param ssn: A 9-character string representing the SSN.
-        :raises ValueError: If the SSN is not a 9-character string.
         """
         if isinstance(ssn, str) and len(ssn) == 9 and ssn.isdigit():
             self.__ssn = ssn
@@ -30,4 +31,7 @@ class Person:
             raise ValueError("Invalid SSN. It must be a 9-digit string.")
 
     def role_duties(self):
+        """
+        Display role duties of the person.
+        """
         return f"Adhere to school policies and guidelines\n"

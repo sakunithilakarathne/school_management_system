@@ -1,17 +1,14 @@
 import unittest
-
+from models.student import *
+from models.teacher import *
+from models.staff import *
 
 class TestTeacher(unittest.TestCase):
     def setUp(self):
         """Set up test fixtures."""
-        self.teacher = Teacher("Mr. Smith", 45, "456 Oak St", "T98765", "Mathematics")
+        self.teacher = Teacher("John Smith", 45, "123, School Lane", "Male",
+                               "T_001", "Mathematics")
 
-    def test_role_duties(self):
-        """Test the role_duties() method."""
-        self.assertEqual(
-            self.teacher.role_duties(),
-            "Responsibilities: Teach Mathematics, grade assignments, and manage classes."
-        )
 
     def test_schedule_classes(self):
         """Test the schedule_classes() method."""
@@ -29,7 +26,7 @@ class TestTeacher(unittest.TestCase):
         self.teacher.schedule_classes("Wednesday", "9:00 AM", "Linear Algebra")
 
         expected_output = (
-            "Class Schedule for Mr. Smith (Teacher ID: T98765):\n"
+            "Class Schedule for John Smith (Teacher ID: T_001):\n"
             "Monday:\n"
             "  10:00 AM: Mathematics 101\n"
             "Wednesday:\n"

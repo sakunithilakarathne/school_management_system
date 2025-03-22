@@ -33,9 +33,9 @@ class Teacher(Person):
 
         schedule_str = f"Class Schedule for {self.name} (Teacher ID: {self.teacher_id}):\n"
         for day, classes in self.class_schedule.items():
-            # schedule_str += f"{day}:\n"
-            print(day)
+            schedule_str += f"{day}:\n"
+            #print(day)
             for time, class_name in classes.items():
-                print(f"\t{time} : {class_name}")
-        #         schedule_str += f"  {time}: {class_name}\n"
-        # return schedule_str
+                #print(f"\t{time} : {class_name}")
+                 schedule_str += f"  {time}: {class_name}\n"
+        return schedule_str
