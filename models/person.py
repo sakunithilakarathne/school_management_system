@@ -30,4 +30,4 @@ class Person:
             raise ValueError("Invalid SSN. It must be a 9-digit string.")
 
     def role_duties(self):
-        return "Adhere to school policies and guidelines"
+        return f"Adhere to school policies and guidelines\n"

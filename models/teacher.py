@@ -14,7 +14,7 @@ class Teacher(Person):
 
 
     def role_duties(self):
-        return f"Teacher Responsibilities: \n- Teaching {self.subject} \n- Conducting exams for {self.subject}\n"
+        return f"Teacher Responsibilities: Teaching {self.subject} , Conducting exams for {self.subject}\n"
 
 
 

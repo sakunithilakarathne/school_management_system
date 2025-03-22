@@ -4,9 +4,25 @@ from models.teacher import *
 from models.staff import *
 
 if __name__ == "__main__":
+
     # Create a Student object
-    student_1 = Student("Alice Johnson", 16, "456, Galle Road", "Female", "S_001",10)
-    # print(student_1.display_info())
+    student_1 = Student("Alice Johnson", 16, "456, Garden Road", "Female", "S_001",11)
+    print(student_1.display_info())
+    #print(student_1.role_duties())
+
+    # Create a Teacher object
+    teacher_1 = Teacher("John Smith", 45, "123, School Lane", "Male",
+                        "T_001", "Mathematics")
+    print(teacher_1.display_info())
+    #print(teacher_1.role_duties())
+
+    # Create a Staff object
+    staff_1 = Staff("Sam Collins", 50, "789, Main Road", "Male",
+                  "A_001","Administrator","4","70000","2000")
+    print(staff_1.display_info())
+    #print(staff_1.role_duties())
+
+
     #
     #
     # # Create a Teacher object
@@ -67,29 +83,29 @@ if __name__ == "__main__":
     #
     # # Display class schedule
     # print(teacher.display_schedule())
-    student = Student("Ann Davis", 20, "No 1, Lotus Lane", "Female", "S_002", "2")
-    # # Mark attendance
-    # student.attendance("2025-01-01", "Mathematics", 0)
-    # student.attendance("2025-01-01", "Science", 1)
-    # student.attendance("2025-01-01", "Language", 1)
-    # student.attendance("2025-01-02", "History", 0)
-    # student.attendance("2025-01-02", "Mathematics", 1)
-    # student.attendance("2025-01-03", "Science", 1)
-    # student.attendance("2025-01-03", "Mathematics", 1)
-    # student.attendance("2025-01-03", "Language", 1)
+    # student = Student("Ann Davis", 20, "No 1, Lotus Lane", "Female", "S_002", "2")
+    # # # Mark attendance
+    # # student.attendance("2025-01-01", "Mathematics", 0)
+    # # student.attendance("2025-01-01", "Science", 1)
+    # # student.attendance("2025-01-01", "Language", 1)
+    # # student.attendance("2025-01-02", "History", 0)
+    # # student.attendance("2025-01-02", "Mathematics", 1)
+    # # student.attendance("2025-01-03", "Science", 1)
+    # # student.attendance("2025-01-03", "Mathematics", 1)
+    # # student.attendance("2025-01-03", "Language", 1)
+    # #
+    # # # Display attendance record
+    # # print(student.display_attendance())
     #
-    # # Display attendance record
-    # print(student.display_attendance())
-
-    # Create a Staff instance
-    staff = Staff("John Doe", 30, "789, Main Street", "Male", "S_003",
-                  "Technician", 3,50000,2021)
-
-    # Calculate salary
-    staff.calculate_salary()
-
-    # Display staff information
-    print(staff.display_info())
+    # # Create a Staff instance
+    # staff = Staff("John Doe", 30, "789, Main Street", "Male", "S_003",
+    #               "Technician", 3,50000,2021)
+    #
+    # # Calculate salary
+    # staff.calculate_salary()
+    #
+    # # Display staff information
+    # print(staff.display_info())
 
     # Get salary
-    print("Calculated Salary:", staff.get_salary())
+    # print("Calculated Salary:", staff.get_salary())

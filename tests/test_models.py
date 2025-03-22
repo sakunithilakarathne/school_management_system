@@ -1,20 +1,36 @@
 import unittest
+from models.person import *
+from models.student import *
+from models.teacher import *
+from models.staff import *
+
+
 
 class TestSchoolClasses(unittest.TestCase):
+
+
+    # Testing student display_info()
     def test_student(self):
-        student = Student("Alice", 16, "123 Elm St", "S12345")
-        self.assertEqual(student.display_info(), "Name: Alice, Age: 16, Address: 123 Elm St, Student ID: S12345")
-        self.assertEqual(student.role_duties(), "Responsibilities: Attend classes, complete assignments, and participate in exams.")
+        student = Student("Alice Johnson", 16, "456, Garden Road", "Female", "S_001",11)
+        self.assertEqual(student.display_info(), "Name: Alice Johnson, Age: 16, Address: 456, Garden Road, Student ID: S_001, Class: 11")
 
+
+    # Testing teacher display_info()
     def test_teacher(self):
-        teacher = Teacher("Mr. Smith", 45, "456 Oak St", "T98765", "Mathematics")
-        self.assertEqual(teacher.display_info(), "Name: Mr. Smith, Age: 45, Address: 456 Oak St, Teacher ID: T98765, Subject: Mathematics")
-        self.assertEqual(teacher.role_duties(), "Responsibilities: Teach Mathematics, grade assignments, and manage classes.")
+        teacher = Teacher("John Smith", 45, "123, School Lane", "Male",
+                        "T_001", "Mathematics")
+        self.assertEqual(teacher.display_info(), "Name: John Smith, Age: 45, Address: 123, School Lane, Teacher ID: T_001, Subject: Mathematics")
 
+
+    # Testing staff display_info()
     def test_staff(self):
-        staff = Staff("John Doe", 30, "789 Pine St", "F54321", "Administrative")
-        self.assertEqual(staff.display_info(), "Name: John Doe, Age: 30, Address: 789 Pine St, Staff ID: F54321, Role: Administrative")
-        self.assertEqual(staff.role_duties(), "Responsibilities: Manage Administrative tasks and support school operations.")
+        staff = Staff("Sam Collins", 50, "789, Main Road", "Male",
+                  "A_001","Administrator","4","70000","2000")
+        self.assertEqual(staff.display_info(), "Name: Sam Collins, Age: 50, Address: 789, Main Road, Staff ID: A_001, Role: Administrator")
+
+
+
+
 
 if __name__ == "__main__":
     unittest.main()

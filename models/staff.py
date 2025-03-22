@@ -16,7 +16,7 @@ class Staff(Person):
 
 
     def role_duties(self):
-        return f"Staff Duties: \n-Conducting {self.role} related daily duties\n"
+        return f"Staff Duties: Conducting {self.role} related daily duties\n"
 
 
 
@@ -47,14 +47,3 @@ class Staff(Person):
             raise ValueError("Salary has not been calculated yet. Call calculate_salary() first.")
         return f"Salary: ${self.salary:.2f}"
 
-    # def display_info(self):
-    #     """
-    #     Displays information about the staff member, including their salary.
-    #     """
-    #     info = f"Name: {self.name}, Age: {self.age}, Address: {self.address}\n"
-    #     info += f"Staff ID: {self.staff_id}, Role: {self.role}, Grade: {self.role_grade}\n"
-    #     if self.salary is not None:
-    #         info += f"Salary: ${self.salary:.2f}"
-    #     else:
-    #         info += "Salary: Not calculated yet."
-    #     return info

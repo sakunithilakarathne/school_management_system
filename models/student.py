@@ -17,8 +17,6 @@ class Student(Person):
     def assign_grades(self, grades):
         """
         Assigns grades for subjects to the student.
-        :param grades: A dictionary where keys are subjects (str) and values are grades (int or float).
-        :raises ValueError: If the input is invalid (empty, non-numeric grades, or grades outside 0-100).
         """
         if not grades:
             raise ValueError("Grades dictionary cannot be empty.")
@@ -40,7 +38,6 @@ class Student(Person):
     def calculate_average_grade(self):
         """
         Calculates the average grade for all subjects.
-        :return: The average grade as a float.
         """
         if not self.results:
             raise ValueError("No grades have been assigned yet.")
@@ -52,7 +49,7 @@ class Student(Person):
 
 
     def role_duties(self):
-        return f"Student Responsibilities: \n- Maintaining attendance over 80% \n- Sitting for exams of grade {self.year}\n"
+        return f"Student Responsibilities: Maintaining attendance over 80%, Sitting for exams of grade {self.year}\n"
 
 
     def attendance(self,date,class_name,presence):
